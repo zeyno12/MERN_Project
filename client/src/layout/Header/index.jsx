@@ -22,8 +22,6 @@ const Header = () => {
           placeholder="Search..."
           rightIcon={AiOutlineSearch}
           className="hidden lg:inline"
-          //   value={searchTerm}
-          //   onChange={(e) => setSearchTerm(e.target.value)}
         />
       </form>
       <Button className="w-12 h-10 lg:hidden" color="gray" pill>

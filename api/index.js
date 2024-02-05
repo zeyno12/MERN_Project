@@ -1,6 +1,18 @@
-import express from 'express'
-const app=express()
+import express from "express";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
+mongoose
+  .connect(process.env.MONGO)
+  .then(() => {
+    console.log("mogose salan");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
-app.listen(3000,()=>{
-    console.log("zeynus");
-})
+const app = express();
+
+app.listen(3000, () => {
+  console.log("zeynus");
+});

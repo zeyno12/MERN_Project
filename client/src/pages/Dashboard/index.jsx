@@ -27,7 +27,6 @@ const Dashboard = () => {
         <DashSidebar />
       </div>
       {tab === "profile" && <Profile />}
-      {tab === "posts" && <Posts />}
       {tab === "users" && <Users />}
       {tab === "comments" && <Comments />}
       {tab === "dash" && <DashboardComp />}

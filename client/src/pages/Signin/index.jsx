@@ -33,7 +33,7 @@ export default function SignIn() {
       const data = await res.json();
       if (data.success === false) {
         dispatch(signInFailure(data.message));
-      }   
+      }
       if (res.ok) {
         dispatch(signInSuccess(data));
         navigate("/");
@@ -80,19 +80,8 @@ export default function SignIn() {
                 onChange={handleChange}
               />
             </div>
-            <Button
-              gradientDuoTone="purpleToPink"
-              type="submit"
-              disabled={loading}
-            >
-              {loading ? (
-                <>
-                  <Spinner size="sm" />
-                  <span className="pl-3">Loading...</span>
-                </>
-              ) : (
-                "Sign In"
-              )}
+            <Button gradientDuoTone="purpleToPink" type="submit">
+              Sign In
             </Button>
             <OAuth />
           </form>

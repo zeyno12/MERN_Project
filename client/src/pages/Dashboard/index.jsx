@@ -4,7 +4,7 @@ import {
   Comments,
   DashSidebar,
   DashboardComp,
-  Posts,
+  Post,
   Profile,
   Users,
 } from "../../modules";
@@ -28,6 +28,7 @@ const Dashboard = () => {
       </div>
       {tab === "profile" && <Profile />}
       {tab === "users" && <Users />}
+      {tab === "post" && <Post />}
       {tab === "comments" && <Comments />}
       {tab === "dash" && <DashboardComp />}
     </div>

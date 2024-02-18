@@ -11,7 +11,7 @@ dotenv.config();
 mongoose
   .connect(process.env.MONGO)
   .then(() => {
-    console.log("mogose salan");
+    console.log("mogose salam");
   })
   .catch((err) => {
     console.log(err);
